@@ -1,0 +1,2 @@
+use("veiculos");
+db.carros.find();

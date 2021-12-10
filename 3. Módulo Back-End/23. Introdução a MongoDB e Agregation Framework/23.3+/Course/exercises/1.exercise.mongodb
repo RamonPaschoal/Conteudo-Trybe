@@ -1,0 +1,6 @@
+use("conteudo_trybe");
+db.movies.find(
+  {
+    category: { $all: ["action", "adventure"] }
+  }
+);

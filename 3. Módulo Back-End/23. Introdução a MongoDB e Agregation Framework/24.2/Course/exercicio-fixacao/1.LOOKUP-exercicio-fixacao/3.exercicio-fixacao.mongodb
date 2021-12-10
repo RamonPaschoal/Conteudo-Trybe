@@ -1,0 +1,23 @@
+use("agg_example");
+db.clients.aggregate(
+  {
+    $match: {
+      State: "Florida"
+    }
+  },
+  {
+    $lookup: {
+      from: 'transactions',
+      let: { clientName: "$name" },
+      pipeline: [{
+        $match: {
+          $expr: {
+            $eq: ["$to", "$$clientName"]
+          },
+          
+        }
+      }],
+      as: 'clientTransactionsRecieved'
+    }
+  }
+);

@@ -1,0 +1,12 @@
+use("conteudo_trybe");
+db.products.aggregate([
+  {
+    $project: {
+      _id: 0,
+      name: 1,
+      ceilRound: {
+        $floor: "$sale_price"
+      }
+    }
+  }
+]);

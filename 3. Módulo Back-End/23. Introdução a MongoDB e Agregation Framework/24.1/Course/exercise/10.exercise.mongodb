@@ -1,0 +1,17 @@
+use("erp");
+db.vendas.aggregate([
+  {
+    $group: {
+      _id: "$clienteId",
+      clientes: { $sum: 1 }
+    }
+  },
+  {
+    $match: {
+      clientes: { $lt: 5 }
+    }
+  },
+  {
+    $count: "clientes"
+  }
+]);

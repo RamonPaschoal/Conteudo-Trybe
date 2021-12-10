@@ -1,0 +1,2 @@
+SELECT DATEDIFF('2030-01-20', NOW()); -- Requisito 1
+SELECT TIMEDIFF('10:25:45', '11:00:00'); -- Requisito 2

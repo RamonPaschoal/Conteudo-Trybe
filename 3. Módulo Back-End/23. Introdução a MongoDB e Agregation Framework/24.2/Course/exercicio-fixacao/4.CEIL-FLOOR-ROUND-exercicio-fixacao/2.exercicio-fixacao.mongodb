@@ -1,0 +1,10 @@
+use("conteudo_trybe");
+db.example1.aggregate([
+  {
+    $project: {
+      delta: {
+        $abs: { $subtract: ["$start", "$end"] }
+      }
+    }
+  }
+]);

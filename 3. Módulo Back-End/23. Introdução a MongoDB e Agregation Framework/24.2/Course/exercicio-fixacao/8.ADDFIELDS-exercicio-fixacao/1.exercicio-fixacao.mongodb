@@ -1,0 +1,10 @@
+use("erp");
+db.products.aggregate([
+  {
+    $addFields: {
+      stockValue: {
+        $multiply: ["$sale_price", "$quantity"]
+      }
+    }
+  }
+]);

@@ -1,0 +1,22 @@
+use('music');
+db.song.remove({});
+db.artist.remove({});
+
+use('music');
+db.song.insertMany([
+  {
+    _id: ObjectId("5f762ca643893a773b2a5e48"),
+    artist_id: ObjectId("5f762bb4d0c1dd24e7600ec9"),
+    name: 'Instante Crush',
+    album: 'Random Access Memories'
+  },
+  {
+    _id: ObjectId("5f762d3f43893a773b2a5e4b"),
+    artist_id: ObjectId("5f762bb4d0c1dd24e7600eca"),
+    name: 'Wicked Game',
+    album: 'Controvérsia'
+  }
+])
+
+use('music');
+db.artist.find();

@@ -1,0 +1,6 @@
+use("conteudo_trybe");
+db.movies.find(
+  {
+    $text: { $search: "monstrous criminal" }
+  }
+);

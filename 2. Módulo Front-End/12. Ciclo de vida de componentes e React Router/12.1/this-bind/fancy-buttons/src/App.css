@@ -1,0 +1,7 @@
+.candidato {
+  width: 300px;
+  height: 300px;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}

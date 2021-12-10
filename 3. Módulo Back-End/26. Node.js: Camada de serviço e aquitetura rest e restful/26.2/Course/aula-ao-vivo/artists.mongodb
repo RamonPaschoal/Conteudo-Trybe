@@ -1,0 +1,30 @@
+use('music');
+db.song.remove({});
+db.artist.remove({});
+
+use('music');
+db.artist.insertMany([
+  {
+    _id: ObjectId("5f762bb4d0c1dd24e7600ec7"),
+    name: "Angra",
+    genres: ['power metal', 'folk metal', 'progressive metal']
+  },
+  {
+    _id: ObjectId("5f762bb4d0c1dd24e7600ec8"),
+    name: "Nina Simone",
+    genres: ['R&B', 'Blues', 'soul']
+  },
+  {
+    _id: ObjectId("5f762bb4d0c1dd24e7600ec9"),
+    name: "Daft Punk",
+    genres: ['french house', 'disco']
+  },
+  {
+    _id: ObjectId("5f762bb4d0c1dd24e7600eca"),
+    name: "Alok",
+    genres: ['Eletrônica', 'Deep house']
+  }
+])
+
+use('music');
+db.artist.find();

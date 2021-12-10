@@ -1,0 +1,15 @@
+use("class");
+db.movies.updateOne(
+  {
+    title: "Home Alone",
+    "cast.actor": "Daniel Stern"
+  },
+  {
+    $set: {
+      "cast.$.character": "Marv" //Não entendi o motivo do $
+    }
+  }
+);
+
+use("class");
+db.movies.find().pretty();

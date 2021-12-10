@@ -1,0 +1,1 @@
+ALTER TABLE countries CHANGE COUNTRY_NAME country VARCHAR(25);

@@ -1,0 +1,24 @@
+use("erp");
+db.vendas.aggregate([
+  {
+    $match: { 
+      status: { $in: ["EM SEPARACAO", "ENTREGUE"] }
+    }
+  },
+  {
+    $group: {
+      _id: "$clienteId",
+      valorGasto: {
+        $sum: "$valorTotal"
+      }
+    }
+  },
+  {
+    $sort: {
+      valorGasto: -1
+    }
+  },
+  {
+    $limit: 5
+  }
+]);

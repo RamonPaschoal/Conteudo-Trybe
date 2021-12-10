@@ -1,0 +1,4 @@
+use("business");
+db.restaurants.deleteOne(
+  { cuisine: { $in: ["Ice Cream", "Gelato", "Yogurt", "Ices"] } }
+);

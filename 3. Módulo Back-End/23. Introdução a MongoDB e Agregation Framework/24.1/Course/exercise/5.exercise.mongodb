@@ -1,0 +1,14 @@
+use("erp");
+db.clientes.aggregate([
+  // {
+  //   $match: {
+  //     sexo: { $in: ["MASCULINO", "FEMININO"] },
+  //   }
+  // },
+  {
+    $group: {
+      _id: "$sexo",
+      total: { $sum: 1 }
+    }
+  }
+]);

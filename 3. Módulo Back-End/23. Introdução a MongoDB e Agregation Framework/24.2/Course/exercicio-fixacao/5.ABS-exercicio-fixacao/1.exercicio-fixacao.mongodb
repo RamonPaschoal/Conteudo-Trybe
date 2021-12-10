@@ -1,0 +1,16 @@
+use("conteudo_trybe");
+db.products.aggregate([
+  {
+    $project: {
+      name: 1,
+      absProfit: {
+        $abs: {
+          $subtract: [
+            "$sale_price",
+            { $add: ["$purchase_price", "$taxes"] }
+          ]
+        }
+      }
+    }
+  }
+]);

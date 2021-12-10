@@ -1,0 +1,8 @@
+use("agg_example");
+db.transactions.aggregate([
+  {
+    $or: [
+      $match: { value: { $gte: 700, $lte: 6000 } },
+    ],
+  },
+]);

@@ -1,0 +1,11 @@
+use("test");
+db.students.updateMany(
+   {
+     _id: 5,
+     grades: { $elemMatch: { grade: { $lte: 90 }, mean: { $gt: 80 } } }
+   },
+   { $set: { "grades.$.std" : 6 } }
+);
+
+use("test");
+db.students.find();

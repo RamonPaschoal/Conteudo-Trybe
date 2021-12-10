@@ -1,0 +1,16 @@
+use("agg_example");
+db.transactions.aggregate([
+  {
+    $group: {
+      _id: '$bank',
+      totalTransaction: {
+        $sum: '$value',
+      },
+    },
+  },
+  {
+    $match: {
+      totalTransaction: { $gt: 1000 }
+    },
+  },
+]);

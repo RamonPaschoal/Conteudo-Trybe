@@ -1,0 +1,8 @@
+SELECT * FROM sakila.actor WHERE last_name = 'DAVIS'; -- Filtrada a tabela actor onde deve constar apenas os dados que contenham last_name DAVIS
+SELECT * FROM sakila.film WHERE length > 50 ORDER BY length; -- Filtrada a tabela film onde deve retornar apenas os dados da coluna length sejam maiores que 50, e ordenados em ordem ascendente.
+SELECT * FROM sakila.film WHERE title <> 'ACE GOLDFINGER' AND replacement_cost > 20; -- Filtrada a tabela film pelo título, onde o mesmo deve ser diferente de 'ACE GOLDFINGER' e a coluna replacement_cost maior que 20.
+SELECT * FROM sakila.film WHERE rating = 'G' OR rating = 'PG' OR rating = 'PG-13'; -- Filtrada a tabela film pelo rating, onde devera retornar apenas os valores que o rating seja G, PG ou PG-13.
+SELECT * FROM sakila.rental WHERE return_date IS NULL; -- Filtrado a tabela rental onde buscamos os filmes que ainda não foram devolvidos, ou seja, valores que não possuem data de return (return_date).
+SELECT * FROM sakila.staff WHERE active IS TRUE; -- Filtrado a tabela staff, onde buscamos os funcionários ativos, ou seja, que tem a coluna active com valor 1 (true) (false seria 0).
+SELECT * FROM sakila.address WHERE address2 IS NOT NULL; -- Filtrado a tabela address para buscar os valores que não sejam nulos na coluna address2. Nota-se que espaço vazio é diferente de nulo. 
+SELECT * FROM sakila.film WHERE title NOT LIKE 'academy%'; -- Filtrado a tabela film onde buscamos os filmes que não comecem com a palavra academy. O % no final da palavra indica que começa com a palavra academy.
