@@ -1,0 +1,25 @@
+.resid {
+    margin: 5px;
+    margin-left: 0px;
+
+}
+
+.datei {
+    display: inline-block;
+    margin: 5px;
+    margin-left: 0px;
+}
+
+.datef {
+    display: inline-block;
+    margin: 5px;
+}
+.resid {
+    position: absolute;
+    top: 260px;
+    left: 290px;
+}
+
+.ap {
+    margin-left: 30px;
+}

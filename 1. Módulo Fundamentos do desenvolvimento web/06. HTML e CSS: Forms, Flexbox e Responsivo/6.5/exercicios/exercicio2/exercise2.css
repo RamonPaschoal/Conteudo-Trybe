@@ -1,0 +1,82 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+header {
+    font-size: 50px;
+    text-align: center;
+}
+
+header nav {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+.aside-one{
+    text-align: center;
+}
+.aside-one ul{
+    text-align: start;
+    list-style: none;
+}
+.aside-one a{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+.aside-two {
+    text-align: center;
+}
+.aside-two ul {
+    text-align: start;
+    list-style: none;
+}
+.main-content {
+    font-size: 20px;
+    background-color: aliceblue;
+}}
+
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .asides {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        font-size: 25px;
+    }
+    .aside-one ul, .aside-two ul {
+        text-align: start;
+        list-style: none;
+    }
+    .aside-one a {
+        text-decoration: none;
+        color: black;
+    }
+    .main-content {
+        background-color: cornsilk;
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .asides {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        font-size: 35px;
+    }
+    .aside-one ul, .aside-two ul {
+        text-align: start;
+        list-style: none;
+    }
+    .aside-one a {
+        text-decoration: none;
+        color: black;
+    }
+    .main-content {
+        background-color: khaki;
+        font-size: 35px;
+    }
+}

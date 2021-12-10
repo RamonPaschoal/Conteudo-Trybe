@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="container text-center">
+        <h1 class="display-4">Formulário</h1>
+        <p class="lead"><em>Nos conte um pouco mais sobre quem é vocêS</em></p>
+    </header>
+    <hr>
+    <form action="input-text" method="GET">
+        <div class="container input-name">
+            <div class="input-group input-group-sm mb-3 inputManual">
+                <label class="input-group-text" id="inputGroup-sizing-sm">Nome</label>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+              </div>
+        </div>
+        <div class="form-floating inputManual">
+            <textarea class="form-control align" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+            <label for="floatingTextarea2" placeholder="Comente sobre você">ok</label>
+        </div>
+        <input type="checkbox" value="é o fut" name="esporte" id="eporte1" checked>Futebol
+        <input type="checkbox" value="vol" name="esporte" id="esporte2">Volei
+        <input type="checkbox" value="Basq" name="esporte" id="esporte3">Basquete
+        <input type="checkbox" value="pet" name="esporte" id="esporte4">Peteca
+        <br><br>
+        <label for="hub1"><input type="radio" id="hub1" name="hub" value="sp">São Paulo</label>
+        <label for="hub2"><input type="radio" id="hub2" name="hub" value="bh"> Belo Horizonte</label>
+        <label for="hub3"><input type="radio" id="hub3" name="hub" value="fl"> Florianópolis</label>
+        <label for="hub4"><input type="radio" id="hub4" name="hub" value="mc"> Macedônia</label>
+        <select name="estado" id="dropdown-estado">
+            <option value="sp">São Paulo</option>
+            <option value="ba">Bahia</option>
+            <option value="mg">Minas Gerais</option>
+            <option value="am">Amazonas</option>
+        </select>
+        <input type="password" name="senha">
+        <input type="file" name="" id="">
+        <p>Usuário</p>
+        <input type="text" name="user" required>
+        <p>Senha</p>
+        <input type="password" name="senha" required>
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

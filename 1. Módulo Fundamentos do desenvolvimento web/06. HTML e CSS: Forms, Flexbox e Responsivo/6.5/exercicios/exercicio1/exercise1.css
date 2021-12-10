@@ -1,0 +1,40 @@
+body {
+
+}
+h1 {
+
+}
+h2 {
+
+}
+
+img {
+    max-width: 100%;
+}
+
+figure {
+    margin: 0;
+}
+
+@media screen and (max-width: 800px) {
+    body{
+        background-color: burlywood;
+        font-size: 20px;
+        margin: 5px;
+    }
+    .figure {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    body {
+        background-color: cadetblue;
+        font-size: 16px;
+        margin: 20px;
+        max-width: 950px;
+    }
+    .figure {
+        display: flex;
+    }
+}

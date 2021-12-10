@@ -1,0 +1,53 @@
+h1 {
+    text-align: center;
+  }
+  body {
+      text-align: ;
+  }
+
+  .first {
+    background-color: rgb(235, 200, 84);
+    font-size: 20px;
+    height: 50px;
+    text-align: center;
+    width: 200px;
+    position: absolute;
+    top: 100px;
+    left: 850px;
+    list-style-type: none;
+  }
+
+  .second {
+    background-color: rgb(219, 219, 219);
+    font-size: 20px;
+    height: 50px;
+    text-align: center;
+    width: 300px;
+    position: absolute;
+    top: 150px;
+    left: 655px;
+    list-style-type: none;
+  }
+
+  .third {
+    background-color: rgb(170, 142, 106);
+    font-size: 20px;
+    height: 50px;
+    text-align: center;
+    width: 300px;
+    position: absolute;
+    top: 150px;
+    left: 960px;
+    list-style-type: none;
+  }
+  .corpo {
+      display: inline-block;
+      margin-left: 600px;
+      text-align: center;
+  }
+  .corpo li {
+      list-style-type: none;
+  }
+  .list {
+      display: ;
+  }

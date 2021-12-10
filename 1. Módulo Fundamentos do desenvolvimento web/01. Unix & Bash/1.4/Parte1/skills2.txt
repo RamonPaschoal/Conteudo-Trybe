@@ -1,0 +1,8 @@
+Internet
+Unix
+Bash
+Processos 
+Comandos
+Shell
+Input
+Output

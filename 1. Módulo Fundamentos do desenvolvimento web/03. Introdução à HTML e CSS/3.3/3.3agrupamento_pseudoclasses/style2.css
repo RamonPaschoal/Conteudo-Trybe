@@ -1,0 +1,30 @@
+div:hover {
+    border-radius: 20px;
+    border: orangered; 
+    border-style: dashed;
+    max-width: 200px;
+    text-align: center;
+}
+.azul:hover {
+    color: blue ;
+
+}
+.verde:hover {
+    color: green;
+}
+.laranja:hover {
+    color: orange;
+    font-size: 25px;
+}
+.marrom:hover {
+    color: brown;
+}
+.amarelo:hover {
+    color: yellow;
+}
+.impar {
+    font-style: italic;
+}
+h3 {
+    text-decoration: underline;
+}

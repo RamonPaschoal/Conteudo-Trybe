@@ -1,0 +1,48 @@
+body {
+    background-image: url(./boxe2.png);
+    background-attachment: fixed;
+    background-size: 100%;
+}
+nav ul li {
+    display: inline;
+    margin: 10px;
+}
+.link {
+    background-color: rgb(64, 255, 47);
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.link a {
+    text-decoration: none;
+    color:indigo;
+}
+.fatos-section {
+    display: inline-block;
+    width: 80%;
+
+}
+.fatos  {
+}
+.aside-section {
+    display: inline-block;
+    vertical-align: top;
+}
+.aside {
+    display: block;
+    text-align: center;
+    border: aqua;
+    border-style: solid;
+    background-color: rgb(204, 253, 253);
+}
+.aside ul {
+    text-align: left;
+    margin: 10px;
+}
+.topico{
+    list-style-type: none;
+    padding: initial;
+    border-color: blueviolet;
+    border-style: solid;
+    background-color: rgb(182, 132, 230);
+}

@@ -1,0 +1,11 @@
+ul {
+  text-align: start;
+  list-style: none;
+  font-size: 16px;
+}
+
+.images {
+  align-items: center;
+  text-align: center;
+  
+}
